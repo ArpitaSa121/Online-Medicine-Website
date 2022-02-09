@@ -1,0 +1,58 @@
+<html>
+</html>
+<head>
+    <title>
+        Login
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.html">
+</head>
+<body style="background:url(https://cdn2.f-cdn.com/contestentries/1490804/32875450/5cbfe247369ee_thumb900.jpg); background-size: 100% 100%;">
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+
+          <form id="login" class="input-group">
+           <form action= "success.php" method="POST">
+                <input type="text" class="input-field"  placeholder="UserId" name="UserId"  required>
+                <input type="password" class="input-field" placeholder="Password" name="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+             <button type="submit" class="submit-btn" >Log In</button>
+        </form>
+            <form id="register" class="input-group">
+              
+                <input type="text" class="input-field" placeholder="User Id" name="User Id"  required>
+                <input type="email" class="input-field" placeholder="Email" name="Email"  required>
+                <input type="password" class="input-field" placeholder="Password" name="Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & conditons </span>
+                <button type="submit" class="submit-btn">Register</button>
+                 
+            </form>
+        </div>   
+    </div>
+    <a href="button.html" class="go" style="border-bottom-style: solid;">LET'S GO</a>
+    <script >
+   var x=document.getElementById("login");
+   var y=document.getElementById("register");
+   function register()
+   {
+       x.style.left="-400px";
+       y.style.left="50px";
+   }
+   function login()
+   {
+    x.style.left="50px";
+       y.style.left="450px";
+   }
+    </script>
+<!-----------------------------featured products----------------------------->
+     
+    <a href="index.html"></a>
+
+    
+    
+</body>
+</html>
